@@ -1,0 +1,17 @@
+<html>
+<br>
+Welcome, {{name}}!
+<form action = "/createMessage" method="post">
+    <input type="text" placeholder="Write a message" name="newMessage"/>
+    <button type="submit"> Save </button>
+</form>
+
+
+<ol>
+{{#message}}
+<li> {{name}} - {{message}}
+</li>
+{{/message}}
+</ol>
+</body>
+</html>
